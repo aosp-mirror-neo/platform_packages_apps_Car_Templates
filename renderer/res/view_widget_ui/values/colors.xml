@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright 2021 Google Inc.
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+<!-- Copyright 2014 Google Inc. All Rights Reserved. -->
+<resources>
+    <!-- Copy of material colors. -->
+    <!-- These colors are from http://www.google.com/design/spec/style/color.html#color-ui-color-palette -->
+    <color name="system_sdk_grey_50">#fffafafa</color>
+    <color name="system_sdk_grey_100">#fff5f5f5</color>
+    <color name="system_sdk_grey_200">#ffeeeeee</color>
+    <color name="system_sdk_grey_300">#ffe0e0e0</color>
+    <color name="system_sdk_grey_400">#ffbdbdbd</color>
+    <color name="system_sdk_grey_600">#ff757575</color>
+    <color name="system_sdk_grey_650">#ff6b6b6b</color>
+    <color name="system_sdk_grey_700">#ff616161</color>
+    <color name="system_sdk_grey_800">#ff424242</color>
+    <color name="system_sdk_grey_900">#ff212121</color>
+    <color name="system_sdk_grey_1000">#cc000000</color>
+    <color name="system_sdk_white_1000">#1effffff</color>
+    <color name="system_sdk_blue_grey_100">#ffCFD8DC</color>
+    <color name="system_sdk_blue_grey_200">#ffB0BEC5</color>
+    <color name="system_sdk_blue_grey_800">#ff37474F</color>
+    <color name="system_sdk_blue_grey_900">#ff263238</color>
+    <color name="system_sdk_dark_blue_grey_600">#ff222B31</color>
+    <color name="system_sdk_dark_blue_grey_700">#ff172026</color>
+    <color name="system_sdk_dark_blue_grey_800">#ff11181d</color>
+    <color name="system_sdk_dark_blue_grey_900">#ff090c0f</color>
+    <color name="system_sdk_light_blue_300">#ff4fc3f7</color>
+    <color name="system_sdk_light_blue_500">#ff03A9F4</color>
+    <color name="system_sdk_light_blue_600">#ff039be5</color>
+    <color name="system_sdk_light_blue_700">#ff0288d1</color>
+    <color name="system_sdk_light_blue_800">#ff0277bd</color>
+    <color name="system_sdk_light_blue_900">#ff01579b</color>
+    <color name="system_sdk_light_blue_a700">#ff0091ea</color>
+    <color name="system_sdk_blue_200a">#ff4a83ed</color>
+    <color name="system_sdk_blue_300">#ff91a7ff</color>
+    <color name="system_sdk_blue_500">#ff5677fc</color>
+    <color name="system_sdk_blue_800">#ff1565C0</color>
+    <color name="system_sdk_blue_900">#ff0d47a1</color>
+    <color name="system_sdk_green_500">#ff0f9d58</color>
+    <color name="system_sdk_green_700">#ff0b8043</color>
+    <color name="system_sdk_yellow_500">#fff4b400</color>
+    <color name="system_sdk_yellow_800">#ffee8100</color>
+    <color name="system_sdk_red_400">#ffe06055</color>
+    <color name="system_sdk_red_500">#ffdb4437</color>
+    <color name="system_sdk_red_500a">#ffd50000</color>
+    <color name="system_sdk_red_700">#ffc53929</color>
+    <color name="system_sdk_red_700a">#ffd50000</color>
+    <color name="system_sdk_pink_600">#ffD81B60</color>
+    <color name="system_sdk_pink_900">#ff880E4F</color>
+    <color name="system_sdk_teal_200">#ff80cbc4</color>
+    <color name="system_sdk_teal_300">#ff4db6ac</color>
+    <color name="system_sdk_teal_400">#ff26a69a</color>
+    <color name="system_sdk_teal_500">#ff009688</color>
+    <color name="system_sdk_teal_700">#ff00796b</color>
+    <color name="system_sdk_700">#ff172026</color>
+    <color name="system_sdk_900">#ff0c1013</color>
+    <color name="system_sdk_fab_view_color">#ff009688</color>
+    <color name="system_sdk_fab_view_clicked_color">#0026a69a</color>
+    <color name="system_sdk_keygroup_circle">#ff104343</color>
+    <!-- Aliases for material colors that may be used programmatically -->
+    <color name="system_sdk_headline1_light">@color/system_sdk_grey_100</color>
+    <color name="system_sdk_headline1_dark">@color/system_sdk_grey_800</color>
+    <color name="system_sdk_headline1">@color/system_sdk_headline1_dark</color>
+
+    <color name="system_sdk_headline2_light">@color/system_sdk_grey_100</color>
+    <color name="system_sdk_headline2_dark">@color/system_sdk_grey_900</color>
+    <color name="system_sdk_headline2">@color/system_sdk_headline2_dark</color>
+
+    <color name="system_sdk_title_light">@color/system_sdk_grey_100</color>
+    <color name="system_sdk_title_dark">@color/system_sdk_grey_900</color>
+    <color name="system_sdk_title">@color/system_sdk_title_dark</color>
+
+    <color name="system_sdk_body1">@color/system_sdk_body1_dark</color>
+    <color name="system_sdk_body2">@color/system_sdk_body2_dark</color>
+
+    <color name="system_sdk_caption_light">@color/system_sdk_grey_400</color>
+    <color name="system_sdk_caption_dark">@color/system_sdk_grey_700</color>
+    <color name="system_sdk_caption">@color/system_sdk_caption_dark</color>
+
+    <color name="system_sdk_micro_light">@color/system_sdk_grey_100</color>
+    <color name="system_sdk_micro_dark">@color/system_sdk_grey_700</color>
+    <color name="system_sdk_micro">@color/system_sdk_micro_dark</color>
+
+    <color name="system_sdk_card_light">@color/system_sdk_grey_50</color>
+    <color name="system_sdk_card_dark">@color/system_sdk_dark_blue_grey_700</color>
+    <color name="system_sdk_card">@color/system_sdk_card_light</color>
+
+    <color name="system_sdk_card_ripple_background_dark">#17000000</color>
+    <color name="system_sdk_card_ripple_background_light">#27ffffff</color>
+    <color name="system_sdk_card_ripple_background">@color/system_sdk_card_ripple_background_dark</color>
+    <color name="system_sdk_card_ripple_background_inverse">@color/system_sdk_card_ripple_background_light</color>
+
+    <color name="system_sdk_card_ripple_light_color_background_dark">#8F000000</color>
+    <color name="system_sdk_card_ripple_light_color_background_light">#8F000000</color>
+    <color name="system_sdk_card_ripple_light_color_background">@color/system_sdk_card_ripple_light_color_background_dark</color>
+
+    <color name="system_sdk_controller_ripple_dark">#ff7da9c7</color>
+    <color name="system_sdk_controller_ripple_light">#adffffff</color>
+
+    <color name="system_sdk_overscroll_glow_light">@color/system_sdk_grey_400</color>
+    <color name="system_sdk_overscroll_glow_dark">@color/system_sdk_grey_900</color>
+    <color name="system_sdk_overscroll_glow">@color/system_sdk_overscroll_glow_light</color>
+
+    <color name="system_sdk_tint_night">@color/system_sdk_grey_50</color>
+    <color name="system_sdk_tint_day">@color/system_sdk_grey_900</color>
+    <color name="system_sdk_tint">@color/system_sdk_tint_day</color>
+    <color name="system_sdk_tint_inverse">@color/system_sdk_tint_night</color>
+
+    <color name="system_sdk_tint_light">@color/system_sdk_grey_50</color>
+    <color name="system_sdk_tint_dark">@color/system_sdk_grey_900</color>
+    <color name="system_sdk_card_tint">@color/system_sdk_tint_dark</color>
+
+    <color name="system_sdk_list_divider">#1f000000</color>
+    <color name="system_sdk_list_divider_light">#1fffffff</color>
+    <color name="system_sdk_list_divider_dark">#1f000000</color>
+
+    <color name="system_sdk_focused_color">@color/system_sdk_teal_200</color>
+    <color name="system_sdk_focused_blue_day">#4B9EFF</color>
+    <color name="system_sdk_focused_blue_night">#2371CD</color>
+    <color name="system_sdk_focused_green_day">#35ED9F</color>
+    <color name="system_sdk_focused_green_night">#499754</color>
+    <color name="system_sdk_focus_pressed_day">#7DA9C7</color>
+    <color name="system_sdk_focus_pressed_night">#FFFFFF</color>
+    <color name="system_sdk_focus_normal">@color/system_sdk_focus_normal_day</color>
+    <color name="system_sdk_focus_normal_day">#807DA9C7</color>
+    <color name="system_sdk_focus_normal_night">#ADFFFFFF</color>
+
+    <color name="system_sdk_music_accent_color">#ff9700</color>
+
+    <color name="system_sdk_error_screen">#ff1e272e</color>
+
+    <color name="system_sdk_highlight_selected_light">@color/system_sdk_blue_grey_100</color>
+    <color name="system_sdk_highlight_selected_dark">@color/system_sdk_dark_blue_grey_600</color>
+    <color name="system_sdk_highlight_selected">@color/system_sdk_highlight_selected_light</color>
+
+    <!-- Content Browse -->
+    <color name="system_sdk_unlimited_browsing_exit">#ff1de9b6</color>
+
+    <!-- Universal SDK related -->
+
+    <!-- PagedListView -->
+    <color name="system_sdk_scrollbar_thumb_night">#99ffffff</color>
+    <color name="system_sdk_scrollbar_thumb_day">#7f0b0f12</color>
+    <color name="system_sdk_scrollbar_thumb">@color/system_sdk_scrollbar_thumb_day</color>
+    <color name="system_sdk_scrollbar_thumb_inverse">@color/system_sdk_scrollbar_thumb_night</color>
+
+    <!-- StatusBar icons tint -->
+    <color name="status_bar_drawer_closed_day">@color/system_sdk_grey_900</color>
+    <color name="status_bar_drawer_closed_night">@color/system_sdk_grey_100</color>
+    <color name="status_bar_drawer_closed">@color/status_bar_drawer_closed_day</color>
+    <color name="status_bar_drawer_closed_inverse">@color/status_bar_drawer_closed_night</color>
+
+    <color name="status_bar_drawer_opened_day">@color/system_sdk_grey_900</color>
+    <color name="status_bar_drawer_opened_night">@color/system_sdk_grey_50</color>
+    <color name="status_bar_drawer_opened">@color/status_bar_drawer_opened_day</color>
+
+    <!-- Drawer -->
+    <color name="drawer_background_day">@color/system_sdk_grey_50</color>
+    <color name="drawer_background_night">@color/system_sdk_dark_blue_grey_700</color>
+    <color name="drawer_background">@color/drawer_background_day</color>
+
+    <!-- Ripple -->
+    <color name="system_sdk_controller_ripple_day">#b27da9c7</color>
+    <color name="system_sdk_controller_ripple_night">#66ffffff</color>
+    <color name="system_sdk_controller_ripple">@color/system_sdk_controller_ripple_day</color>
+
+    <color name="system_sdk_touch_ripple_day">#17000000</color>
+    <color name="system_sdk_touch_ripple_night">#27ffffff</color>
+    <color name="system_sdk_touch_ripple">@color/system_sdk_touch_ripple_day</color>
+
+    <color name="system_sdk_ripple">@color/system_sdk_touch_ripple</color>
+
+    <!-- Card -->
+    <color name="system_sdk_card_background_day">@color/system_sdk_grey_50</color>
+    <color name="system_sdk_card_background_night">#191f27</color>
+    <color name="system_sdk_card_background">@color/system_sdk_button_background_day</color>
+
+    <!-- Button -->
+    <color name="system_sdk_button_background_day">@color/system_sdk_grey_50</color>
+    <color name="system_sdk_button_background_night">#191f27</color>
+    <color name="system_sdk_button_background">@color/system_sdk_button_background_day</color>
+
+    <color name="system_sdk_toggle_ring_color_day">@color/system_sdk_grey_1000</color>
+    <color name="system_sdk_toggle_ring_color_night">@color/system_sdk_grey_50</color>
+    <color name="system_sdk_toggle_ring_color">@color/system_sdk_toggle_ring_color_day</color>
+
+    <!-- Call -->
+    <color name="system_sdk_call_end">@color/system_sdk_red_700a</color>
+    <color name="system_sdk_call_answer">@color/system_sdk_green_500</color>
+
+    <!-- App bar -->
+    <color name="overview_action_bar">@color/overview_action_bar_day</color>
+    <color name="overview_action_bar_day">#0F3693</color>
+    <color name="overview_action_bar_night">#071F51</color>
+
+    <color name="lens_picker_action_bar">@color/lens_picker_action_bar_day</color>
+    <color name="lens_picker_action_bar_day">@color/system_sdk_dark_blue_grey_700</color>
+    <color name="lens_picker_action_bar_night">@color/system_sdk_dark_blue_grey_800</color>
+
+    <color name="dialer_action_bar">@color/system_sdk_blue_800</color>
+
+    <color name="search_box_card_day">@color/system_sdk_grey_50</color>
+    <color name="search_box_card_night">@color/system_sdk_dark_blue_grey_700</color>
+    <color name="search_box_card">@color/search_box_card_day</color>
+
+    <color name="search_box_text_secondary_day">#8a000000</color>
+    <color name="search_box_text_secondary_night">#66ffffff</color>
+    <color name="search_box_text_secondary">@color/search_box_text_secondary_day</color>
+
+    <color name="search_box_text_primary_day">#de000000</color>
+    <color name="search_box_text_primary_night">#a6ffffff</color>
+    <color name="search_box_text_primary">@color/search_box_text_primary_day</color>
+
+    <color name="search_box_map_overlay_day">@android:color/transparent</color>
+    <color name="search_box_map_overlay_night">@color/system_sdk_grey_1000</color>
+    <color name="search_box_map_overlay">@color/search_box_map_overlay_day</color>
+
+    <!-- Projection Keyboard -->
+    <color name="system_keyboard_lockout">#fff1f1f1</color>
+</resources>

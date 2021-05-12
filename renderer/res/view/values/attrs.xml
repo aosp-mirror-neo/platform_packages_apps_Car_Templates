@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright 2021 Google Inc.
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+<resources>
+  <!-- The theme attributes for the template UI.
+    Template layouts and their widgets should not hardcode any styles for the most part but instead
+    use references to these theme attributes, thus making the look and feel of the template UI
+    completely defined by this theme. -->
+  <declare-styleable name="TemplateTheme">
+    <!-- Map markers. -->
+    <!-- The appearance of markers in the map view. -->
+    <attr name="templateMapMarkerAppearance" format="reference"/>
+
+    <!-- The appearance of markers in the list view. -->
+    <attr name="templateListMarkerAppearance" format="reference"/>
+
+    <!-- Content containers -->
+    <!-- Plain content container attributes. A plain container displays the
+         content on a flat surface with no rounded corners, shadows, etc. -->
+    <attr name="templatePlainContentContainerStyle" format="reference"/>
+    <attr name="templatePlainContentContainerWidth" format="dimension"/>
+
+    <!-- Card content container attributes. -->
+    <attr name="templateCardContentContainerStyle" format="reference"/>
+    <attr name="templateCardRoutingContentContainerStyle" format="reference"/>
+    <attr name="templateCardContentContainerDefaultWidth" format="dimension"/>
+    <attr name="templateCardContentContainerStartMargin" format="dimension"/>
+    <attr name="templateCardContentContainerBottomMargin" format="dimension"/>
+    <attr name="templateCardContentContainerMinHeight" format="dimension"/>
+    <attr name="templateCardContentContainerRadius" format="dimension"/>
+
+    <!-- Headers -->
+    <!-- The height of the header, which contains a title and other elements
+         such as the app icon or a back button. -->
+    <attr name="templateHeaderHeight" format="dimension"/>
+
+    <!-- The size of the icon of a button in the header (aspect ratio 1:1). -->
+    <attr name="templateHeaderButtonIconSize" format="dimension"/>
+
+    <!-- The color of the tint for header buttons (e.g. the back button). -->
+    <attr name="templateHeaderButtonIconTint" format="color"/>
+
+    <!-- The background of a header button. Used to implement focus selection
+         state, ripple effects, etc. -->
+    <attr name="templateHeaderButtonBackground" format="reference"/>
+
+    <!-- Row list and rows -->
+    <!-- Theme attributes for lists of rows. -->
+    <attr name="templateRowListStyle" format="reference"/>
+
+    <!-- Theme attributes for rows in lists. -->
+    <!--    The background color of a row container view.-->
+    <attr name="templateRowBackgroundColor" format="color"/>
+
+    <!--    The background color of a row container view in the selected state.-->
+    <attr name="templateRowSelectedBackgroundColor" format="color"/>
+
+    <!-- The color of the placeholder while an image is loading in a row.-->
+    <attr name="templateRowImagePlaceholderColor" format="color"/>
+
+    <!-- The text appearance style of a selected row.-->
+    <attr name="templateRowSelectedTextAppearance" format="reference"/>
+
+    <!-- The type of a row's background-->
+    <attr name="templateRowBackgroundType" format="enum">
+
+      <!-- a transparent background for the row-->
+      <enum name="none" value="0"/>
+
+      <!-- a simple background without sections-->
+      <enum name="simple" value="1"/>
+
+      <!-- a background that allows for creating different sections-->
+      <enum name="sectional" value="2"/>
+    </attr>
+
+    <!--    Sign in Template -->
+    <attr name="templateSignInAdaptiveWidthFraction" format="float"/>
+    <attr name="templateSignInInstructionTextStyle" format="reference"/>
+    <attr name="templateSignInAdditionalTextStyle" format="reference"/>
+    <attr name="templateSignInErrorMessageStyle" format="reference"/>
+
+    <!-- The default tint for an icon in a row. -->
+    <attr name="templateRowDefaultIconTint" format="color"/>
+
+    <!-- The padding to the left and right of a row's contents. -->
+    <attr name="templateRowHorizontalPadding" format="dimension"/>
+
+    <!-- The padding to the left and right of a half row's contents. -->
+    <attr name="templateRowHorizontalHalfPadding" format="dimension"/>
+
+    <!-- The padding to the left and right of the text inside of a row. -->
+    <attr name="templateRowTextHorizontalPadding" format="dimension"/>
+
+    <!-- The padding to the left and right of the text inside of a half row. -->
+    <attr name="templateRowTextHorizontalHalfPadding" format="dimension"/>
+
+    <!-- The padding to the bottom of a half list's contents. -->
+    <attr name="templateHalfListBottomPadding" format="dimension"/>
+
+    <!-- The padding to the bottom of a full list's contents. -->
+    <attr name="templateFullListBottomPadding" format="dimension"/>
+
+    <!-- The style of the title of a row. -->
+    <attr name="templateRowTitleStyle" format="reference"/>
+
+    <!-- The style of the secondary text of a row. -->
+    <attr name="templateRowSecondaryTextStyle" format="reference"/>
+
+    <!-- The style of the text of a section header. -->
+    <attr name="templateRowSectionHeaderTextStyle" format="reference"/>
+
+    <!-- The style of the text that indicates a list is empty. -->
+    <attr name="templateRowListEmptyTextStyle" format="reference"/>
+
+    <!-- The background for the top, middle, and bottom rows, and for a single
+         row that is both top and bottom, for lists that show rows with
+         a rounded corner background. These backgrounds can be used for
+         providing rounded corners to the list, or they can all simply be set
+         to the same background, if such an effect is not desired. -->
+    <attr name="templateRowBackgroundSectionalTop" format="reference"/>
+    <attr name="templateRowBackgroundSectionalMiddle" format="reference"/>
+    <attr name="templateRowBackgroundSectionalBottom" format="reference"/>
+    <attr name="templateRowBackgroundSectionalTopBottom" format="reference"/>
+
+    <!-- The margin at the bottom of a section in a list. -->
+    <attr name="templateRowBackgroundSectionalBottomMargin" format="dimension"/>
+
+    <!-- The placeholder for asynchronously loaded row images. -->
+    <attr name="templateRowImagePlaceholder" format="reference"/>
+
+    <!-- The background for rows with square corners. -->
+    <attr name="templateRowBackgroundSimple" format="reference"/>
+
+    <!-- The minimum margin between the rows's title and the edge
+         of the row. -->
+    <attr name="templateRowMinHeight" format="dimension"/>
+
+    <!-- Attributes of the icons in a row of a list. -->
+    <attr name="templateRowIconStyle" format="reference"/>
+    <attr name="templateRowIconSize" format="dimension"/>
+    <attr name="templateRowRadioButtonSize" format="dimension"/>
+    <attr name="templateRowImageSizeSmall" format="dimension"/>
+    <attr name="templateRowImageSizeLarge" format="dimension"/>
+
+    <!-- Attributes for the marker label that is displayed in the list rows
+         when the row has a location attached to it. -->
+    <!-- The minimum width of the marker label. The actual width can expand based on the content string.-->
+    <attr name="templateRowMarkerMinSize" format="dimension"/>
+
+    <!-- The margin from the edge of the row to the marker label. -->
+    <attr name="templateRowMarkerLabelMargin" format="dimension"/>
+
+    <!-- The height of a selection element's container in a row (e.g. a toggle
+         or radio button. -->
+    <attr name="templateRowSelectionContainerHeight" format="dimension"/>
+
+    <!-- The background for the grid item and its containers. -->
+    <attr name="templateGridItemBackground" format="reference"/>
+
+    <!-- The style of the title of a grid item. -->
+    <attr name="templateGridItemTitleStyle" format="reference"/>
+
+    <!-- The style of the secondary text line below the title of a grid item. -->
+    <attr name="templateGridItemTextStyle" format="reference"/>
+
+    <!-- The tint variations for an icon in a grid item. -->
+    <attr name="templateGridItemDefaultIconTint" format="color"/>
+
+    <!-- The maximum width of a grid item text container. -->
+    <attr name="templateGridItemTextContainerMaxWidth" format="dimension"/>
+
+    <!-- The padding to the bottom of the text inside of a grid item. -->
+    <attr name="templateGridItemTextBottomPadding" format="dimension"/>
+
+    <!-- Width of the space in between grid items. -->
+    <attr name="templateGridItemHorizontalSpacing" format="dimension"/>
+
+    <!-- The number of grid items in a grid row. -->
+    <attr name="templateGridItemsPerRow" format="integer"/>
+
+    <!-- Attributes of the icons in a grid item. -->
+    <attr name="templateGridItemIconSize" format="dimension"/>
+    <attr name="templateGridItemImageSizeLarge" format="dimension"/>
+
+    <!-- Theme attributes for the grid. -->
+    <attr name="templateGridStyle" format="reference"/>
+    <attr name="templateGridRecyclerViewPaddingRight" format="reference"/>
+
+    <!-- The style of the text that indicates a grid is empty. -->
+    <attr name="templateGridEmptyTextStyle" format="reference"/>
+
+    <!-- Action buttons and FABs. -->
+    <!-- The margin between action buttons. -->
+    <attr name="templateActionButtonMargin" format="dimension"/>
+
+    <!-- The vertical margin in action buttons. -->
+    <attr name="templateActionButtonVerticalMargin" format="dimension"/>
+
+    <!-- The style of an action displayed as a button. -->
+    <attr name="templateActionButtonStyle" format="reference"/>
+
+    <!-- The style of the text inside of an action button. -->
+    <attr name="templateActionButtonTextStyle" format="reference"/>
+
+    <!-- The default background color of an action displayed as a button. -->
+    <attr name="templateActionButtonDefaultBackgroundColor" format="color" />
+
+    <!-- The height of an action button. -->
+    <attr name="templateActionHeight" format="reference"/>
+
+    <!-- The height of an action strip. -->
+    <attr name="templateActionStripHeight" format="reference"/>
+
+    <!-- The top margin of an action strip with FAB. -->
+    <attr name="templateActionStripFabTopMargin" format="reference"/>
+
+    <!-- The size of an icon inside of an action button or FAB. -->
+    <attr name="templateActionIconSize" format="dimension"/>
+
+    <!-- The default tint of an icon inside of an action button or FAB. -->
+    <attr name="templateActionDefaultIconTint" format="color"/>
+
+    <!-- The min width of an action button or FAB with text. -->
+    <attr name="templateActionWithTextMinWidth" format="integer"/>
+
+    <!-- The min width of an action button or FAB with an icon only. -->
+    <attr name="templateActionWithoutTextMinWidth" format="integer"/>
+
+    <!-- The max ems of the text inside of a button when there is no icon. -->
+    <attr name="templateActionButtonTextMaxEmsNoIcon" format="integer"/>
+
+    <!-- The max ems of the text inside of a button when there is an icon. -->
+    <attr name="templateActionButtonTextMaxEmsWithIcon" format="integer"/>
+
+    <!-- The max ems of the text inside of a FAB when there is no icon. -->
+    <attr name="templateFabTextMaxEmsNoIcon" format="integer"/>
+
+    <!-- The max ems of the text inside of a FAB when there is an icon. -->
+    <attr name="templateFabTextMaxEmsWithIcon" format="integer"/>
+
+    <!-- The width of the border of a secondary button. -->
+    <attr name="templateActionButtonSecondaryBorderWidth" format="dimension"/>
+
+    <!-- The color of the border of a secondary button. -->
+    <attr name="templateActionButtonSecondaryBorderColor" format="color"/>
+
+    <!-- The inset of a button. Needed to show a focus ring outside the button UI. -->
+    <attr name="templateActionButtonInset" format="dimension"/>
+
+    <!-- The margin between buttons in the action strip. -->
+    <attr name="templateActionStripButtonMargin" format="dimension"/>
+
+    <!-- The corner radius of buttons in the action strip. -->
+    <attr name="templateActionStripButtonCornerRadius" format="dimension"/>
+
+    <!-- The color of buttons in the action strip in full-screen templates. -->
+    <attr name="templateActionStripButtonBackgroundColor" format="color"/>
+
+    <!-- The appearance of action strip buttons as FABs. -->
+    <attr name="templateActionStripFabAppearance" format="reference"/>
+
+    <!-- The appearance of action strip buttons in full-screen templates. -->
+    <attr name="templateActionStripFullTemplateFabAppearance" format="reference"/>
+
+    <!-- Ripple attributes, common for all elements using ripples. -->
+    <attr name="templateRippleColor" format="color"/>
+    <attr name="templateRippleSelectorColor" format="color"/>
+
+    <!-- Toggles and radio buttons. -->
+    <attr name="templateToggleWidth" format="dimension"/>
+    <attr name="templateToggleHeight" format="dimension"/>
+    <attr name="templateToggleInactiveTrackColor" format="color"/>
+    <attr name="templateToggleInactiveThumbColor" format="color"/>
+    <attr name="templateToggleActiveTrackColor" format="color"/>
+    <attr name="templateToggleActiveThumbColor" format="color"/>
+    <attr name="templateRadioButtonSize" format="dimension"/>
+
+    <!-- Focus. -->
+    <attr name="templateFocusAccentColor" format="color"/>
+    <attr name="templateFocusNoContentAccentColor" format="color"/>
+    <attr name="templateFocusStateInactive" format="boolean"/>
+    <attr name="templateFocusRingColor" format="color"/>
+    <attr name="templateFocusRingNoAccentColor" format="color"/>
+
+    <!-- Editable text. -->
+    <attr name="templateEditTextHeight" format="dimension"/>
+    <attr name="templateEditTextStyle" format="reference"/>
+    <attr name="templateEditTextCornerRadius" format="dimension"/>
+    <attr name="templateEditTextFocusRingRadius" format="dimension"/>
+    <attr name="templateEditTextFocusRingPadding" format="dimension"/>
+    <attr name="templateEditTextBackground" format="reference"/>
+    <attr name="templateEditTextColor" format="color"/>
+    <attr name="templateEditTextDisabledColor" format="color"/>
+    <attr name="templateEditTextHintColor" format="color"/>
+    <attr name="templateEditTextHintDisabledColor" format="color"/>
+    <attr name="templateEditTextBackgroundColor" format="color"/>
+    <attr name="templateEditTextBackgroundDisabledColor" format="color"/>
+    <attr name="templateEditTextUnderlineActiveColor" format="color"/>
+    <attr name="templateEditTextUnderlineEnabledColor" format="color"/>
+    <attr name="templateEditTextUnderlineErrorColor" format="color"/>
+    <attr name="templateEditTextUnderlineDisabledColor" format="color"/>
+
+    <!-- Search bar. -->
+    <!-- Maximum width of the search bar. -->
+    <attr name="templateSearchBarMaxWidth" format="dimension"/>
+
+    <!-- The search icon on the left side of the search bar. -->
+    <attr name="templateSearchBarIcon" format="reference"/>
+
+    <!-- Message template. -->
+    <!-- The default tint of an icon inside of the message template. -->
+    <attr name="templateMessageDefaultIconTint" format="color"/>
+
+    <!-- The size the icon in the message template. -->
+    <attr name="templateMessageIconSize" format="dimension"/>
+
+    <!-- The style of the text in the title of the message template. -->
+    <attr name="templateMessageTitleTextStyle" format="reference"/>
+
+    <!-- The color of the text and background of the debug message showing the
+         callstack in error screens. -->
+    <attr name="templateMessageDebugTextStyle" format="reference"/>
+    <attr name="templateDebugMessageBackgroundColor" format="color"/>
+
+    <!-- Navigation routing template. -->
+    <!-- The maximum heights and width of an image in a text span.
+         body2 and body3 variants should be used along text views configured
+         with those respective font sizes. -->
+    <attr name="templateRoutingImageSpanMaxWidth" format="dimension"/>
+    <attr name="templateRoutingImageSpanBody2MaxHeight" format="dimension"/>
+    <attr name="templateRoutingImageSpanBody3MaxHeight" format="dimension"/>
+
+    <!-- The default tint of an icon inside of the routing card. -->
+    <attr name="templateRoutingDefaultIconTint" format="color"/>
+
+    <!-- The dimensions of the rerouting icon (ratio 1:1). -->
+    <attr name="templateRoutingReroutingIconSize" format="dimension"/>
+
+    <!-- The dimensions of the turn icon (ratio 1:1). -->
+    <attr name="templateRoutingTurnIconSize" format="dimension"/>
+
+    <!-- The dimensions of the compact turn icon (ratio 1:1). -->
+    <attr name="templateRoutingCompactTurnIconSize" format="dimension"/>
+
+    <!-- The height of the container of the lanes image. -->
+    <attr name="templateRoutingLanesImageContainerHeight" format="dimension"/>
+
+    <!-- The dimensions of the lanes image. -->
+    <attr name="templateRoutingLanesImageWidth" format="dimension"/>
+    <attr name="templateRoutingLanesImageHeight" format="dimension"/>
+
+    <!-- The color of the background of the lanes image. -->
+    <attr name="templateRoutingLanesImageBackgroundColor" format="color"/>
+
+    <!-- The color of the background of the junction image. -->
+    <attr name="templateRoutingJunctionImageBackgroundColor" format="color"/>
+
+    <!-- The maximum height of the junction image -->
+    <attr name="templateRoutingJunctionImageMaxHeight" format="dimension"/>
+
+    <!-- The height of the compact step, e.g. the row that's displayed at the
+         bottom of the routing card. -->
+    <attr name="templateRoutingCompactStepHeight" format="color"/>
+
+    <!-- The dimensions of the destination image in the message view
+     (ratio 1:1). -->
+    <attr name="templateRoutingMessageImageSize" format="dimension"/>
+
+    <!-- The style of the primary text for the title in the message view. -->
+    <attr name="templateRoutingMessagePrimaryStyle" format="reference"/>
+
+    <!-- The style of the secondary text for the message view. -->
+    <attr name="templateRoutingMessageSecondaryStyle" format="reference"/>
+
+    <!-- The width and min height of the container which shows the current and
+         next steps in the routing card. -->
+    <attr name="templateRoutingStepsCardContentContainerWidth" format="dimension"/>
+    <attr name="templateRoutingStepsCardContentContainerMinHeight" format="dimension"/>
+
+    <!-- The color of the divider in the routing card. -->
+    <attr name="templateRoutingDividerColor" format="dimension"/>
+
+    <!-- Attributes of the container that shows the "you have arrived"
+         message. -->
+    <attr name="templateRoutingArrivalContentContainerWidth" format="dimension"/>
+    <attr name="templateRoutingArrivalContentContainerHeight" format="dimension"/>
+
+    <!-- Status bar. -->
+    <!-- Status bar gradient background start and end colors. -->
+    <attr name="templateStatusBarStartColor" format="color"/>
+    <attr name="templateStatusBarEndColor" format="color"/>
+
+    <!-- Defines a minimum top padding for the presenter in case there is no status bar,
+         i.e. Widescreen Android Auto does not have status bar. -->
+    <attr name="templateStatusBarMinimumTopPadding" format="dimension"/>
+
+    <!-- No content view. -->
+    <attr name="templateNoContentFocusCornerRadius" format="dimension"/>
+
+    <!-- Misc. -->
+    <attr name="templateLoadingSpinnerStyle" format="reference"/>
+
+    <!-- Attributes of most dividers used throughout the UI. -->
+    <attr name="templateDividerColor" format="color"/>
+    <attr name="templateDividerThickness" format="dimension"/>
+
+    <!-- A fraction used for implementing margins that adapt to the width of the screen.
+        For example, some templates may have a 12% minimum margin (with respect of the
+        screen width) on either side. This value should be set to 1.0 minus twice
+        the margin percentage (in other words, it is the width of the content itself). -->
+    <attr name="templateAdaptiveWidthFraction" format="float"/>
+
+    <!-- The duration in milliseconds of a template transition animation e.g. a cross fade. -->
+    <attr name="templateUpdateAnimationDurationMilliseconds" format="integer"/>
+
+  </declare-styleable>
+</resources>

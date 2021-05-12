@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright 2021 Google Inc.
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- This nested FrameLayout is necessary to install the CarUi toolbar -->
+    <com.android.car.ui.FocusArea
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/message_template_container"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+        <!-- A toggle that only in debug mode that allows displaying and hiding
+            the stack trace of an error page. -->
+        <LinearLayout
+            android:id="@+id/debug_toggle_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="end"
+            android:visibility="gone">
+            <ImageView
+                android:src="@drawable/ic_bugreport"
+                android:layout_width="?templateToggleWidth"
+                android:layout_height="?templateToggleHeight"
+                android:tint="@android:color/white"
+                tools:ignore="ContentDescription" />
+            <Switch
+                android:id="@+id/debug_toggle"
+                android:focusable="true"
+                android:tint="@android:color/white"
+                android:layout_width="?templateToggleWidth"
+                android:layout_height="?templateToggleHeight" />
+        </LinearLayout>
+
+        <!-- A container for the template elements that is centered in the
+            screen. -->
+        <LinearLayout
+            android:id="@+id/message_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+            <!-- An icon shown on top of the contents. -->
+            <ImageView
+                android:id="@+id/message_icon"
+                android:layout_width="?templateMessageIconSize"
+                android:layout_height="?templateMessageIconSize"
+                android:visibility="gone"
+                tools:ignore="ContentDescription" />
+
+            <!-- The title displayed below the icon. -->
+            <TextView
+                android:id="@+id/message_text"
+                style="?templateMessageTitleTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/template_padding_4" />
+
+            <include
+                android:id="@+id/action_button_list_view"
+                layout="@layout/action_button_list_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/template_action_button_vertical_margin"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/stack_trace_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            tools:ignore="RtlHardcoded">
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/stack_trace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </HorizontalScrollView>
+        </ScrollView>
+    </com.android.car.ui.FocusArea>
+</FrameLayout>

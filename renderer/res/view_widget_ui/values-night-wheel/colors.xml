@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright 2021 Google Inc.
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+<!-- Copyright 2014 Google Inc. All Rights Reserved. -->
+<!-- Please update the related file -->
+<resources>
+    <color name="system_sdk_card_ripple_background">@color/system_sdk_controller_ripple_light</color>
+
+    <!-- SDK related -->
+
+    <!-- Ripple -->
+    <color name="system_sdk_controller_ripple">@color/system_sdk_controller_ripple_night</color>
+    <color name="system_sdk_touch_ripple">@color/system_sdk_touch_ripple_night</color>
+    <color name="system_sdk_ripple">@color/system_sdk_controller_ripple</color>
+
+    <!-- Button -->
+    <color name="system_sdk_button_background">@color/system_sdk_button_background_night</color>
+</resources>
+<!-- LINT.ThenChange(../values-night-dpad/colors.xml) -->

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright 2021 Google Inc.
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+<resources>
+  <!-- The template app theme.
+
+       <p>This theme must be set on the root template view which is the parent of all the
+       template layouts and their child views.
+
+       <p>Styles used by this theme are named using the convention Type.Template.Etc
+       (for example {@code TextAppearance.Template.RowTitle}).-->
+
+  <style name="Theme.Template" parent="android:Theme.Material.NoActionBar">
+
+    <!-- Common. -->
+    <item name="templateAdaptiveWidthFraction">@dimen/template_adaptive_width_fraction</item>
+
+    <!-- Sign In Template. -->
+    <item name="templateSignInAdaptiveWidthFraction">@dimen/template_sign_in_adaptive_width_fraction</item>
+    <item name="templateSignInInstructionTextStyle">@style/Widget.Template.SignIn.InstructionText</item>
+    <item name="templateSignInAdditionalTextStyle">@style/Widget.Template.SignIn.AdditionalText</item>
+    <item name="templateSignInErrorMessageStyle">@style/Widget.Template.SignIn.ErrorMessage</item>
+
+    <!-- Map markers. -->
+    <item name="templateMapMarkerAppearance">@style/MarkerAppearance.Template.Map</item>
+    <item name="templateListMarkerAppearance">@style/MarkerAppearance.Template.List</item>
+
+    <!-- Loading spinners. -->
+    <item name="templateLoadingSpinnerStyle">@style/Widget.Template.Spinner</item>
+
+    <!-- Plain content containers. -->
+    <item name="templatePlainContentContainerStyle">@style/Widget.Template.Container.Plain</item>
+    <item name="templatePlainContentContainerWidth">@dimen/template_plain_content_container_width</item>
+
+    <!-- Card content containers. -->
+    <item name="templateCardContentContainerStyle">@style/Widget.Template.Container.Card.Content</item>
+    <item name="templateCardRoutingContentContainerStyle">@style/Widget.Template.Container.Card.Content.Routing</item>
+    <item name="templateCardContentContainerDefaultWidth">@dimen/template_card_content_container_default_width</item>
+    <item name="templateCardContentContainerStartMargin">@dimen/template_card_content_container_start_margin</item>
+    <item name="templateCardContentContainerBottomMargin">@dimen/template_card_content_container_bottom_margin</item>
+    <item name="templateCardContentContainerMinHeight">@dimen/template_card_content_container_min_height</item>
+    <item name="templateCardContentContainerRadius">@dimen/template_card_content_container_corner_radius</item>
+
+    <!-- Content headers. -->
+    <item name="templateHeaderHeight">@dimen/template_header_height</item>
+    <item name="templateHeaderButtonIconSize">@dimen/template_header_button_icon_size</item>
+    <item name="templateHeaderButtonIconTint">@color/template_white</item>
+    <item name="templateHeaderButtonBackground">@drawable/template_header_button_background</item>
+
+    <!-- Row Lists. -->
+    <item name="templateRowListStyle">@style/Widget.Template.RowList</item>
+
+    <!-- Dividers. -->
+    <item name="templateDividerThickness">@dimen/template_divider_thickness</item>
+    <item name="templateDividerColor">@color/template_white_24</item>
+
+    <!-- Rows. -->
+    <item name="templateRippleColor">@color/template_ripple_color</item>
+    <item name="templateRippleSelectorColor">@color/template_ripple_selector_color</item>
+    <item name="templateRowBackgroundColor">@color/template_gray_928</item>
+    <item name="templateRowSelectedBackgroundColor">@color/template_gray_878</item>
+    <item name="templateRowImagePlaceholderColor">@color/template_gray_928</item>
+    <item name="templateRowBackgroundSimple">@drawable/row_background_simple</item>
+    <item name="templateRowBackgroundSectionalMiddle">@drawable/row_background_sectional_middle</item>
+    <item name="templateRowBackgroundSectionalTop">@drawable/row_background_sectional_top</item>
+    <item name="templateRowBackgroundSectionalBottom">@drawable/row_background_sectional_bottom</item>
+    <item name="templateRowBackgroundSectionalTopBottom">@drawable/row_background_sectional_top_bottom</item>
+    <item name="templateRowBackgroundSectionalBottomMargin">@dimen/template_row_background_sectional_bottom_margin</item>
+    <item name="templateRowImagePlaceholder">@drawable/row_image_placeholder</item>
+    <item name="templateRowMinHeight">@dimen/template_row_min_height</item>
+    <item name="templateRowIconSize">@dimen/template_row_icon_size</item>
+    <item name="templateRowImageSizeSmall">@dimen/template_row_image_size_small</item>
+    <item name="templateRowImageSizeLarge">@dimen/template_row_image_size_large</item>
+    <item name="templateRowMarkerMinSize">@dimen/template_row_marker_min_size</item>
+    <item name="templateRowMarkerLabelMargin">@dimen/template_row_marker_label_margin</item>
+    <item name="templateRowBackgroundType">sectional</item>
+    <item name="templateRowDefaultIconTint">@color/template_white</item>
+    <item name="templateRowHorizontalPadding">@dimen/template_row_horizontal_padding</item>
+    <item name="templateRowHorizontalHalfPadding">@dimen/template_row_horizontal_half_padding</item>
+    <item name="templateRowTextHorizontalPadding">@dimen/template_row_text_horizontal_padding</item>
+    <item name="templateRowTextHorizontalHalfPadding">@dimen/template_row_text_horizontal_half_padding</item>
+    <item name="templateHalfListBottomPadding">@dimen/template_half_list_bottom_padding</item>
+    <item name="templateFullListBottomPadding">@dimen/template_full_list_bottom_padding</item>
+
+    <!-- Note, these containers are sized to match the height of the title of the row
+         so that they appear vertically aligned at the center when both are top aligned. -->
+    <item name="templateRowSelectionContainerHeight">@dimen/default_body2_line_height</item>
+
+    <!-- Text styles for list elements. -->
+    <item name="templateRowTitleStyle">@style/Widget.Template.RowTitle</item>
+    <item name="templateRowSecondaryTextStyle">@style/Widget.Template.RowSecondary</item>
+    <item name="templateRowSectionHeaderTextStyle">@style/Widget.Template.RowSectionHeader</item>
+    <item name="templateRowSelectedTextAppearance">@style/TextAppearance.Template.RowSelectedText</item>
+    <item name="templateRowListEmptyTextStyle">@style/Widget.Template.RowListEmpty</item>
+
+    <!-- Grids. -->
+    <item name="templateGridStyle">@style/Widget.Template.Grid</item>
+
+    <!-- Grid items. -->
+    <item name="templateGridItemIconSize">@dimen/template_grid_item_icon_size</item>
+    <item name="templateGridItemImageSizeLarge">@dimen/template_grid_item_image_size_large</item>
+    <item name="templateGridItemDefaultIconTint">@color/template_white</item>
+    <item name="templateGridItemTextContainerMaxWidth">@dimen/template_grid_item_text_container_max_width</item>
+    <item name="templateGridItemTextBottomPadding">@dimen/template_grid_item_text_bottom_padding</item>
+    <item name="templateGridItemHorizontalSpacing">@dimen/template_grid_item_horizontal_spacing</item>
+    <item name="templateGridItemsPerRow">@integer/template_grid_items_per_row</item>
+    <item name="templateGridEmptyTextStyle">@style/Widget.Template.GridEmpty</item>
+    <item name="templateGridItemBackground">@drawable/template_grid_item_background</item>
+
+    <!-- Text styles for grid items. -->
+    <item name="templateGridItemTitleStyle">@style/Widget.Template.GridItemTitle</item>
+    <item name="templateGridItemTextStyle">@style/Widget.Template.GridItemText</item>
+
+    <!-- Action buttons and FABs. -->
+    <item name="templateActionButtonMargin">@dimen/template_action_button_margin</item>
+    <item name="templateActionButtonVerticalMargin">@dimen/template_action_button_vertical_margin</item>
+    <item name="templateActionButtonStyle">@style/Widget.Template.ActionButton</item>
+    <item name="templateActionButtonTextStyle">@style/Widget.Template.ActionButtonText</item>
+    <item name="templateActionButtonDefaultBackgroundColor">@color/template_action_button_default_background_color</item>
+    <item name="templateActionHeight">@dimen/template_action_height</item>
+    <item name="templateActionIconSize">@dimen/template_action_icon_size</item>
+    <item name="templateActionWithTextMinWidth">@dimen/template_action_with_text_min_width</item>
+    <item name="templateActionWithoutTextMinWidth">@dimen/template_action_without_text_min_width</item>
+    <item name="templateActionDefaultIconTint">@color/template_white</item>
+    <item name="templateActionButtonTextMaxEmsNoIcon">@integer/template_action_button_text_max_ems_no_icon</item>
+    <item name="templateActionButtonTextMaxEmsWithIcon">@integer/template_action_button_text_max_ems_with_icon</item>
+    <item name="templateFabTextMaxEmsNoIcon">@integer/template_fab_text_max_ems_no_icon</item>
+    <item name="templateFabTextMaxEmsWithIcon">@integer/template_fab_text_max_ems_with_icon</item>
+    <item name="templateActionButtonSecondaryBorderWidth">@dimen/template_action_button_secondary_border_width</item>
+    <item name="templateActionButtonSecondaryBorderColor">@color/template_white_46</item>
+    <item name="templateActionButtonInset">@dimen/template_action_inset</item>
+    <item name="templateActionStripHeight">@dimen/template_action_strip_height</item>
+    <item name="templateActionStripFabTopMargin">@dimen/template_action_strip_fab_top_margin</item>
+    <item name="templateActionStripButtonMargin">@dimen/template_action_strip_button_margin</item>
+    <item name="templateActionStripButtonCornerRadius">@dimen/template_action_strip_button_corner_radius</item>
+    <item name="templateActionStripButtonBackgroundColor">@color/template_black</item>
+    <item name="templateActionStripFabAppearance">@style/FabAppearance.Template.Fab</item>
+    <item name="templateActionStripFullTemplateFabAppearance">@style/FabAppearance.Template.FullTemplate</item>
+
+    <!-- Toggles and radio buttons. -->
+    <item name="templateToggleWidth">@dimen/template_toggle_width</item>
+    <item name="templateToggleHeight">@dimen/template_toggle_height</item>
+    <item name="templateToggleInactiveTrackColor">@color/template_toggle_inactive_track</item>
+    <item name="templateToggleInactiveThumbColor">@color/template_toggle_inactive_thumb</item>
+    <item name="templateToggleActiveTrackColor">@color/template_toggle_active_track</item>
+    <item name="templateToggleActiveThumbColor">@color/template_toggle_active_thumb</item>
+    <item name="templateRadioButtonSize">@dimen/template_radio_button_size</item>
+
+    <!-- Full screen message -->
+    <item name="templateMessageIconSize">@dimen/template_message_icon_size</item>
+    <item name="templateMessageDefaultIconTint">@color/template_white</item>
+    <item name="templateMessageTitleTextStyle">@style/Widget.Template.Message</item>
+    <item name="templateMessageDebugTextStyle">@style/Widget.Template.Debug</item>
+    <item name="templateDebugMessageBackgroundColor">@color/template_gray_900</item>
+
+    <!-- Focus. -->
+    <item name="templateFocusAccentColor">@color/template_focus_ring_color_selector</item>
+    <item name="templateFocusNoContentAccentColor">@color/default_focus_no_content</item>
+    <item name="templateFocusRingColor">@color/default_focus_blue</item>
+    <item name="templateFocusRingNoAccentColor">@color/default_focus_no_content</item>
+
+    <!-- EditText. -->
+    <item name="templateEditTextStyle">@style/Widget.Template.EditText</item>
+    <item name="templateEditTextHeight">@dimen/template_edit_text_height</item>
+    <item name="templateEditTextCornerRadius">@dimen/template_edit_text_corner_radius</item>
+    <item name="templateEditTextFocusRingRadius">@dimen/template_edit_text_focus_ring_radius</item>
+    <item name="templateEditTextFocusRingPadding">@dimen/template_edit_text_focus_ring_padding</item>
+    <item name="templateEditTextBackground">@drawable/template_edit_text_background</item>
+    <item name="templateEditTextColor">@color/template_edit_text_color</item>
+    <item name="templateEditTextDisabledColor">@color/template_edit_text_disabled_color</item>
+    <item name="templateEditTextHintColor">@color/template_edit_text_hint_color</item>
+    <item name="templateEditTextHintDisabledColor">@color/template_edit_text_hint_disabled_color</item>
+    <item name="templateEditTextBackgroundColor">@color/template_edit_text_background_color</item>
+    <item name="templateEditTextBackgroundDisabledColor">@color/template_edit_text_background_disabled_color</item>
+    <item name="templateEditTextUnderlineActiveColor">@color/template_edit_text_underline_active_color</item>
+    <item name="templateEditTextUnderlineEnabledColor">@color/template_edit_text_underline_enabled_color</item>
+    <item name="templateEditTextUnderlineErrorColor">@color/template_edit_text_underline_error_color</item>
+    <item name="templateEditTextUnderlineDisabledColor">@color/template_edit_text_underline_disabled_color</item>
+
+    <!-- Search bar. -->
+    <item name="templateSearchBarMaxWidth">@dimen/template_search_bar_max_width</item>
+    <item name="templateSearchBarIcon">@drawable/search_bar_icon</item>
+
+    <!-- Routing -->
+    <item name="templateRoutingImageSpanMaxWidth">@dimen/template_routing_image_span_max_width</item>
+    <item name="templateRoutingImageSpanBody2MaxHeight">@dimen/template_routing_image_span_body2_max_height</item>
+    <item name="templateRoutingImageSpanBody3MaxHeight">@dimen/template_routing_image_span_body3_max_height</item>
+    <item name="templateRoutingDefaultIconTint">@color/template_white</item>
+    <item name="templateRoutingReroutingIconSize" format="dimension">@dimen/template_routing_rerouting_icon_size</item>
+    <item name="templateRoutingTurnIconSize" format="dimension">@dimen/template_routing_turn_icon_size</item>
+    <item name="templateRoutingCompactTurnIconSize" format="dimension">@dimen/template_routing_compact_turn_icon_size</item>
+    <item name="templateRoutingLanesImageContainerHeight">@dimen/template_routing_lanes_image_container_height</item>
+    <item name="templateRoutingLanesImageWidth">@dimen/template_routing_lanes_image_width</item>
+    <item name="templateRoutingLanesImageHeight">@dimen/template_routing_lanes_image_height</item>
+    <item name="templateRoutingLanesImageBackgroundColor">@color/template_white_16</item>
+    <item name="templateRoutingJunctionImageBackgroundColor">@color/template_white_16</item>
+    <item name="templateRoutingJunctionImageMaxHeight">@dimen/template_routing_junction_image_max_height</item>
+    <item name="templateRoutingCompactStepHeight">@dimen/template_routing_compact_step_height</item>
+    <item name="templateRoutingMessageImageSize" format="dimension">@dimen/template_routing_message_image_size</item>
+    <item name="templateRoutingMessagePrimaryStyle">@style/Widget.Template.Routing.MessagePrimary</item>
+    <item name="templateRoutingMessageSecondaryStyle">@style/Widget.Template.Routing.MessageSecondary</item>
+    <item name="templateRoutingArrivalContentContainerWidth">@dimen/template_routing_arrival_content_container_width</item>
+    <item name="templateRoutingArrivalContentContainerHeight">@dimen/template_routing_arrival_content_container_height</item>
+    <item name="templateRoutingStepsCardContentContainerWidth">@dimen/template_steps_card_content_container_width</item>
+    <item name="templateRoutingStepsCardContentContainerMinHeight">@dimen/template_steps_card_content_container_min_height</item>
+    <item name="templateRoutingDividerColor">@color/template_white_16</item>
+
+    <!-- Status bar gradient background start and end colors. -->
+    <item name="templateStatusBarStartColor">@android:color/transparent</item>
+    <item name="templateStatusBarEndColor">@color/template_status_bar_end_color</item>
+    <item name="templateStatusBarMinimumTopPadding">@dimen/template_status_bar_minimum_top_padding</item>
+
+    <!-- No content view. -->
+    <item name="templateNoContentFocusCornerRadius">@dimen/template_no_content_view_focus_corner_radius</item>
+
+    <!-- Animation. -->
+    <item name="templateUpdateAnimationDurationMilliseconds">@integer/template_update_animation_duration_millis</item>
+
+    <!-- This is necessary so that the floating elements such as the action
+         strip don't get their shadows clipped. -->
+    <item name="android:clipChildren">false</item>
+    <item name="android:clipToPadding">false</item>
+  </style>
+
+  <!-- The template app theme for cards. -->
+  <style name="Theme.Template.Card" parent="Theme.Template">
+    <item name="templateRowBackgroundType">simple</item>
+    <item name="templateRowListStyle">@style/Widget.Template.RowList.Card</item>
+  </style>
+</resources>

@@ -1,0 +1,19 @@
+<manifest package="com.android.car.libraries.apphost"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <uses-sdk android:minSdkVersion="21"/>
+
+  <!-- Declares permissions meant for the Car App Library (3p apps) -->
+  <!-- Permission that apps can use to get access to a canvas surface. -->
+  <permission
+      android:name="androidx.car.app.ACCESS_SURFACE"
+      android:protectionLevel="normal"/>
+  <!-- Permission that apps can use to get access to the navigation templates. -->
+  <permission
+      android:name="androidx.car.app.NAVIGATION_TEMPLATES"
+      android:protectionLevel="normal"/>
+  <!-- Permission that apps can use to get access to templates that show a map. -->
+  <permission
+      android:name="androidx.car.app.MAP_TEMPLATES"
+      android:protectionLevel="normal"/>
+</manifest>
