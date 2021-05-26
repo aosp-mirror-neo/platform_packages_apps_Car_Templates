@@ -15,13 +15,8 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:tools="http://schemas.android.com/tools"
-          package="com.google.android.libraries.car.apphost"
-          android:versionCode="1"
-          android:versionName="0.1">
+          package="com.google.android.libraries.car.apphost">
 
-    <uses-sdk
-        android:minSdkVersion="29"
-        android:targetSdkVersion="29"/>
 
     <application
             tools:replace="android:appComponentFactory"

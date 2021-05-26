@@ -15,13 +15,7 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.android.car.templates.host"
-    android:versionCode="1"
-    android:versionName="0.1">
-
-    <uses-sdk
-        android:minSdkVersion="29"
-        android:targetSdkVersion="30" />
+    package="com.android.car.templates.host" >
 
     <application
         android:label="AOSP Host"
