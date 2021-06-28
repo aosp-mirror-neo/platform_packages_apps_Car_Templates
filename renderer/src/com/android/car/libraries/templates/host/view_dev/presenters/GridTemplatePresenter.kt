@@ -77,7 +77,7 @@ class GridTemplatePresenter internal constructor(
         )
 
         progressBar.visibility = if (template.isLoading) VISIBLE else GONE
-        gridView.visibility = if (template.isLoading) GONE else VISIBLE
+        gridView.view.visibility = if (template.isLoading) GONE else VISIBLE
         // TODO(b/178399426): Add action strip support
 
         if (!template.isLoading) {

@@ -119,7 +119,7 @@ public class RowListView extends FrameLayout {
         mProgressContainer = findViewById(R.id.progress_container);
         mEmptyListTextView = findViewById(R.id.list_no_items_text);
         mListView = findViewById(R.id.list_view);
-        mRowVisibilityObserver = RowVisibilityObserver.create(mListView);
+        mRowVisibilityObserver = RowVisibilityObserver.create(mListView.getRecyclerView());
         mListAdapter = RowAdapter.create(getContext(), new ArrayList<>(), mMarkerFactory);
         mListView.setAdapter(mListAdapter);
         mListAdapter.registerAdapterDataObserver(mAdapterDataObserver);
@@ -338,7 +338,7 @@ public class RowListView extends FrameLayout {
 
         // We add the bottom padding to the recyler view so that the vertical divider between the
         // scrollbar and the list will extend to the end of the list.
-        View recyclerView = mListView;
+        View recyclerView = mListView.getView();
         recyclerView.setPadding(
                 recyclerView.getPaddingLeft(),
                 recyclerView.getPaddingTop(),
