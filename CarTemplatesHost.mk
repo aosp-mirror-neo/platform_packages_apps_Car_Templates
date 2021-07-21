@@ -14,11 +14,5 @@
 # limitations under the License.
 #
 
-PRODUCT_PACKAGES += \
-    TemplatesHost
-
 PRODUCT_COPY_FILES += \
     packages/apps/Car/Templates/Permission/com.android.car.libraries.templates.host.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.android.car.libraries.templates.host.xml
-
-PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
-    system/app/TemplatesHost/TemplatesHost.apk
