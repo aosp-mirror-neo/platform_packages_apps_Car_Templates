@@ -4,3 +4,5 @@ jdp@google.com
 calcoholado@google.com
 bazhanov@google.com
 ejfrancis@google.com
+# Copybara service account: implicit code-owner approval for automated release promotions.
+copybara-worker-blackhole@google.com #{LAST_RESORT_SUGGESTION}
